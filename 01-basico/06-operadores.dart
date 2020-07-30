@@ -15,7 +15,8 @@ main() {
   // print(resp);
 
   int d = b ?? a; // Si b es null tendrá el valor de a. si niguno tiene valor,
-  // la variable será null, puede tener tantos ?? como se quiera
+  // la variable será null, puede tener tantos ?? como se quiera, y se asignará el primer
+  // valor válido
   // print(d);
 
   // ********** Operadores relacionales **********
