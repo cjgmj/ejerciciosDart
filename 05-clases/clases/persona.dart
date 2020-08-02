@@ -1,8 +1,9 @@
 class Persona {
   // Propiedades
-  String nombre;
-  String apellido;
-  int edad;
+  // PAra hacer una propiedad privada tenemos que añadir un _ delante del nombre
+  String _nombre;
+  String _apellido;
+  int _edad;
 
   // Get y sets
 
@@ -10,5 +11,5 @@ class Persona {
 
   // Métodos
   @override
-  String toString() => '$nombre $apellido, $edad';
+  String toString() => '$_nombre $_apellido, $_edad';
 }
