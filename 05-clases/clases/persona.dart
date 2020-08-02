@@ -1,6 +1,6 @@
 class Persona {
   // Propiedades
-  // PAra hacer una propiedad privada tenemos que añadir un _ delante del nombre
+  // Para hacer una propiedad privada tenemos que añadir un _ delante del nombre
   String _nombre;
   String _apellido;
   int _edad;
@@ -27,6 +27,21 @@ class Persona {
   set edad(int edad) => this._edad = edad;
 
   // Constructores
+  // Para añadir argumentos opcionales encapsularlos con {}
+  // En caso de tener alguno a la hora de instanciar un nuevo
+  // objeto tendremos que ponerle el nombre del argumento
+  // Ej: edad: 35
+  // Los argumentos privados no pueden ser opcionales
+  // Se puede establecer un valor por defecto
+  // Ej: Persona(this._nombre, this._apellido, {this.edad = 50})
+  // El constructor da error ya que edad no existe como propiedad
+  // Persona(this._nombre, this._apellido, this._edad);
+
+  // Constructor con parámetros privados como opcionales
+  Persona({nombre, apellido, edad})
+      : _nombre = nombre,
+        _apellido = apellido,
+        _edad = edad;
 
   // Métodos
   @override
