@@ -15,6 +15,11 @@ main() {
   //   ..apellido = 'Simons'
   //   ..edad = 35;
 
+  persona
+    ..nombre = 'Joe'
+    ..apellido = 'Simons'
+    ..edad = 35;
+
   // Imprime lo mismo que el toString
   print(persona);
   print(persona.toString());
