@@ -32,9 +32,8 @@ class Persona {
   // objeto tendremos que ponerle el nombre del argumento
   // Ej: edad: 35
   // Los argumentos privados no pueden ser opcionales
-  // Se puede establecer un valor por defecto
-  // Ej: Persona(this._nombre, this._apellido, {this.edad = 50})
-  // El constructor da error ya que edad no existe como propiedad
+  // Se puede establecer un valor por defecto a los argumentos opcionales
+  // Ej: Persona(this._nombre, this._apellido, {edad = 50}) : _edad = edad;
   // Persona(this._nombre, this._apellido, this._edad);
 
   // Constructor con parámetros privados como opcionales
@@ -42,6 +41,15 @@ class Persona {
       : _nombre = nombre,
         _apellido = apellido,
         _edad = edad;
+
+  // Constructores con nombre
+  Persona.persona30(this._nombre) {
+    this._edad = 30;
+  }
+
+  Persona.persona40(this._nombre) {
+    this._edad = 40;
+  }
 
   // Métodos
   @override
